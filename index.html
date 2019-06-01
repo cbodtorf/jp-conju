@@ -4,9 +4,29 @@
     <title>JP-CONJU</title>
     <meta name='description' content='Microservice utility to conjugate Japanese verbs'/>
     <link rel='stylesheet' href='https://unpkg.com/svbstrate'/>
+    <style>
+      table {
+        font-size: 8px;
+      }
+      .wikitable {
+        background-color: #f8f9fa;
+        color: #222;
+        margin: 1em 0;
+        border: 1px solid #a2a9b1;
+        border-collapse: collapse;
+      }
+      .wikitable > tr > th, .wikitable > * > tr > th {
+        background-color: #eaecf0;
+        text-align: center;
+      }
+      .wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td {
+        border: 1px solid #a2a9b1;
+        padding: 0.2em 0.4em;
+      }
+    </style>
   </head>
   <body>
-    <main class='f aic jcc px1' style='height: 100vh; color: #333'>
+    <main class='f aic jcc px1' style='color: #333'>
       <div class='py1 mxa x' style='max-width: 600px'>
         <h1 class='h2'>jp-conju.now.sh</h1>
         <p class='pb075'>Microservice utility to conjugate Japanese verbs</p>
@@ -26,6 +46,69 @@ fetch(`https://jp-conju.now.sh/api/conju?verb=${verb}&verbtype=${verbtype}`)
           <h4>endpoints</h4>
           <a href='/api/conju?verb=建てる&verbtype=v1'><pre>https://jp-conju.now.sh/api/conju?verb={verb}&verbtype={verbtype}</pre></a>
           <a href='/api/deconju?verb=建てた'><pre>https://jp-conju.now.sh/api/conju?verb={verb}</pre></a>
+        </div>
+
+        <div class='pb1'>
+          <h5>verbtypes</h5>
+          <table class="wikitable collapsible mw-collapsible mw-made-collapsible">
+            <tbody>
+              <tr>
+              <th>Abbreviation
+              </th>
+              <th>Explanation
+              </th></tr>
+              <tr>
+              <td>v1
+              </td>
+              <td>Ichidan verb
+              </td></tr>
+              <tr>
+              <td>v5b
+              </td>
+              <td>Godan verb with 'bu' ending
+              </td></tr>
+              <tr>
+              <td>v5g
+              </td>
+              <td>Godan verb with 'gu' ending
+              </td></tr>
+              <tr>
+              <td>v5k
+              </td>
+              <td>Godan verb with 'ku' ending
+              </td></tr>
+              <tr>
+              <td>v5m
+              </td>
+              <td>Godan verb with 'mu' ending
+              </td></tr>
+              <tr>
+              <td>v5n
+              </td>
+              <td>Godan verb with 'nu' ending
+              </td></tr>
+              <tr>
+              <td>v5r
+              </td>
+              <td>Godan verb with 'ru' ending
+              </td></tr>
+              <tr>
+              <td>v5s
+              </td>
+              <td>Godan verb with 'su' ending
+              </td></tr>
+              <tr>
+              <td>v5t
+              </td>
+              <td>Godan verb with 'tsu' ending
+              </td></tr>
+              <tr>
+              <td>v5u
+              </td>
+              <td>Godan verb with 'u' ending
+              </td></tr>
+            </tbody>
+          </table>
         </div>
 
         <div class='pb1'>
