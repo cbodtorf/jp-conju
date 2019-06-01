@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "alias": "jp-conju.now.sh",
+  "builds": [
+    { "src": "api/conju/index.js", "use": "@now/node" },
+    { "src": "api/deconju/index.js", "use": "@now/node" },
+    { "src": "index.html", "use": "@now/static" }
+  ]
+}

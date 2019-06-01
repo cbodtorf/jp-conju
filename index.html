@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JP-CONJU</title>
+    <meta name='description' content='Microservice utility to conjugate Japanese verbs'/>
+    <link rel='stylesheet' href='https://unpkg.com/svbstrate'/>
+  </head>
+  <body>
+    <main class='f aic jcc px1' style='height: 100vh; color: #333'>
+      <div class='py1 mxa x' style='max-width: 600px'>
+        <h1 class='h2'>jp-conju.now.sh</h1>
+        <p class='pb075'>Microservice utility to conjugate Japanese verbs</p>
+
+        <div class='pb1'>
+          <h4>usage</h4>
+          <pre class='p1' style='max-width: 100%;overflow: auto;background: #333;color: #fff;'>
+            <code>
+              const verb = '建てる'
+              const verbtype = 'v1'
+              fetch(`https://jp-conju.now.sh/api/conju?verb=${verb}&verbtype=${verbtype}`)
+            </code>
+          </pre>
+        </div>
+
+        <h4>endpoints</h4>
+        <a href='/api/conju?verb=建てる&verbtype=v1'><pre>https://jp-conju.now.sh/api/conju?verb={verb}&verbtype={verbtype}</pre></a>
+        <a href='/api/deconju?verb=建てた'><pre>https://jp-conju.now.sh/api/conju?verb={verb}</pre></a>
+      </div>
+    </main>
+  </body>
+</html>

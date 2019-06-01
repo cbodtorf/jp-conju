@@ -1,0 +1,12 @@
+{
+  "name": "jp-conju",
+  "version": "1.0.0",
+  "description": "Japanese Conjugation API",
+  "main": "index.js",
+  "repository": "git@github.com:cbodtorf/jp-conju.git",
+  "author": "<cbodtorf@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jp-conjugation": "^0.0.3"
+  }
+}
